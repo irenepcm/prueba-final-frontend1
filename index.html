@@ -1,94 +1,120 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-irene.png"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
-    <title>Manage</title>
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Manage | Irene Carreño</title>
   </head>
   <body>
+    <div class="background"></div>
+    <div class="tableta">
+      <img src="images/bg-tablet-pattern.svg" alt="" />
+    </div>
     <header>
-      <img class="logo" src="images/logo.svg" alt="logo" />
-      <nav>
-        <span>Pricing</span>
-        <span>Product</span>
-        <span>About Us</span>
-        <span>Careers</span>
-        <span>Community</span>
-      </nav>
-      <button class="main-button">Get Started</button>
+      <div class="hero fadeInUp">
+        <div class="wrapper">
+          <div class="bar-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logo.svg" alt="Logo" />
+            </div>
+            <nav class="nav" id="navegation">
+              <ul>
+                <a href="#"><li>Pricing</li></a>
+                <a href="#"><li>Product</li></a>
+                <a href="#"><li>About Us</li></a>
+                <a href="#"><li>Careers</li></a>
+                <a href="#"><li>Community</li></a>
+              </ul>
+            </nav>
+            <div class="hamburguer">
+              <button>
+                <img src="images/icon-hamburger.svg" alt="Menu hamburguer" />
+              </button>
+            </div>
+            <div class="get-started-hero">
+              <button class="orange btn">Get Started</button>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img src="images/illustration-intro.svg" alt="heroImage" />
+          </div>
+        </div>
+      </div>
     </header>
-    <section class="slide">
-      <div class="promo1">
-        <h1>Bring everyone together to build better products.</h1>
-        <p>
-          Manage makes it simple for software teams to plan day-to-day tasks
-          while keeping the large team goals in view
-        </p>
-        <button class="main-button">Get started</button>
+    <main class="slide fadeInUp">
+      <div class="wrapper">
+        <div class="slide-image">
+          <img src="images/illustration-intro.svg" alt="heroImage" />
+        </div>
+        <div class="slide-text">
+          <h1>Bring everyone together to build better products.</h1>
+          <p>
+            Manage makes it simple for software teams to plan day-to-day tasks
+            while keeping the larger team goals in view.
+          </p>
+          <div class="slide-btn">
+            <button class="btn orange">Get Started</button>
+          </div>
+        </div>
       </div>
-      <div class="promo-imagen">
-        <img src="images/illustration-intro.svg" alt="Chart illutsration" />
-      </div>
-    </section>
-    <section class="central">
-      <div class="sobre-nosotros">
+    </main>
+    <section class="whats-diff fadeInUp">
+      <div class="main-text wrapper">
         <h2>What's different about Manage?</h2>
         <p>
-          Manage provides all the functionality your teas needs, without the
+          Manage provides all the functionality your team needs, without the
           complexity. Our software is tailor-made for modern digital product
-          teams
+          teams.
         </p>
       </div>
-      <div class="articulos">
-        <article class="descripcion">
-          <div>
-            <div class="numeros">01</div>
-          </div>
-          <div>
-            <h3>Track company-wide progress</h3>
+      <div class="numbers">
+        <div class="wrapper">
+          <div class="number">
+            <h3><span>01</span>Track company-wide progress</h3>
             <p>
               See how your day-to-day tasks fit into the wider vision. Go from
               tracking progress at the milestone level all the way done to the
               smallest of details. Never lose sight of the bigger picture again.
             </p>
           </div>
-        </article>
-        <article class="descripcion">
-          <div>
-            <div class="numeros">02</div>
-          </div>
-          <div>
-            <h3>Advance built-in reports</h3>
+          <div class="number">
+            <h3><span>02</span>Advanced built-in reports</h3>
             <p>
               Set internal delivery estimates and track progress toward company
               goals. Our customisable dashboard helps you build out the reports
               you need to keep key stakeholders informed.
             </p>
           </div>
-        </article>
-        <article class="descripcion">
-          <div>
-            <div class="numeros">03</div>
-          </div>
-          <div>
-            <h3>Everything you need in one place</h3>
+          <div class="number">
+            <h3><span>03</span>Everything you need in one place</h3>
             <p>
               Stop jumping from one service to another to communicate, store
               files, track tasks and share documents. Manage offers an
               all-in-one team productivity solution.
             </p>
           </div>
-        </article>
+        </div>
       </div>
     </section>
-    <section class="recomendaciones">
+    <div class="tableta-diff">
+      <img src="images/bg-tablet-pattern.svg" alt="" />
+    </div>
+    <section class="recomendaciones fadeInUp">
       <h2>What they've said</h2>
       <div class="testimonios">
         <div class="personajes">
@@ -119,43 +145,70 @@
           </p>
         </div>
       </div>
-      <button class="main-button">Get started</button>
+      <div class="slider-btn">
+        <button class="orange btn">Get Started</button>
+      </div>
     </section>
-    <section class="naranja">
-      <h2>Simplify hoy your team words today.</h2>
-      <button class="secondary-button">Get started</button>
-    </section>
-    <footer>
-      <div>
-        <img src="images/logo-blanco.svg" alt="logo footer" />
-        <div class="redes">
-          <img src="images/icon-facebook.svg" alt="icon-facebook" />
-          <img src="images/icon-youtube.svg" alt="icon-youtube" />
-          <img src="images/icon-twitter.svg" alt="icon-twitter" />
-          <img src="images/icon-pinterest.svg" alt="icon-pinterest" />
-          <img src="images/icon-instagram.svg" alt="icon-instagram" />
+    <section class="simplify fadeInUp">
+      <div class="wrapper">
+        <div class="simplify-text">
+          <h1>Simplify how your team works today.</h1>
+        </div>
+        <div class="simplify-btn btn">
+          <button class="withe btn">Get Started</button>
         </div>
       </div>
-      <div class="menu-footer">
-        <ul>
-          <li>Home</li>
-          <li>Pricing</li>
-          <li>Products</li>
-          <li>About Us</li>
-        </ul>
-      </div>
-      <div class="menu-footer">
-        <ul>
-          <li>Careers</li>
-          <li>Community</li>
-          <li>Privacy Policy</li>
-        </ul>
-      </div>
-      <div>
-        <form action="enviar">
-          <input type="text" placeholder="Update in your inbox..." />
-          <button class="main-button">Go</button>
-        </form>
+    </section>
+    <footer class="site-footer">
+      <div class="wrapper">
+        <div class="form-wrapper">
+          <form action="">
+            <input
+              type="email"
+              name="newsletter"
+              placeholder="Updates in Your inbox..."
+              id="newsletter-email"
+            />
+          </form>
+          <input
+            type="submit"
+            value="Go"
+            class="btn orange"
+            id="newsletterGo"
+          />
+        </div>
+        <div class="navs">
+          <nav class="nav-footer left">
+            <ul>
+              <a href="#"><li>Home</li></a>
+              <a href="#"><li>Pricing</li></a>
+              <a href="#"><li>Products</li></a>
+              <a href="#"><li>About Us</li></a>
+            </ul>
+          </nav>
+          <nav class="nav-footer right">
+            <ul>
+              <a href="#"><li>Careers</li></a>
+              <a href="#"><li>Community</li></a>
+              <a href="#"><li>Privacy Policy</li></a>
+            </ul>
+          </nav>
+        </div>
+        <div class="social-wrapper">
+          <div class="redes">
+            <img src="images/icon-facebook.svg" alt="icon-facebook" />
+            <img src="images/icon-youtube.svg" alt="icon-youtube" />
+            <img src="images/icon-twitter.svg" alt="icon-twitter" />
+            <img src="images/icon-pinterest.svg" alt="icon-pinterest" />
+            <img src="images/icon-instagram.svg" alt="icon-instagram" />
+          </div>
+          <div class="logo-wrapper-footer">
+            <img src="images/logo-footer.svg" alt="Logo" />
+          </div>
+        </div>
+        <div class="copy">
+          <small>Go Copyright 2020. All Rights Reserved</small>
+        </div>
       </div>
     </footer>
   </body>
