@@ -15,15 +15,14 @@
 
 @keyframes fadeInUp {
   0% {
-      opacity: 0;
-      transform: translateY(40px);
+    opacity: 0;
+    transform: translateY(40px);
   }
   100% {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
-
 
 html {
   box-sizing: border-box;
@@ -51,8 +50,6 @@ p {
   max-width: 330px;
   margin: 0 auto;
 }
-
-
 
 .btn {
   padding: 1em 1.5em;
@@ -84,7 +81,7 @@ p {
   display: block;
   transform: translateX(200%);
   opacity: 0;
-  transition: opacity .3s linear;
+  transition: opacity 0.3s linear;
 }
 
 .background.active {
@@ -96,7 +93,11 @@ p {
   display: block;
   width: 100%;
   height: 90vh;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.835172) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.835172) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
   transform: translateX(0);
   opacity: 1;
 }
@@ -107,7 +108,7 @@ p {
 }
 
 .hero::after {
-  content: '';
+  content: "";
   position: absolute;
   background-image: url(../images/bg-tablet-pattern.svg);
   top: -20%;
@@ -125,12 +126,11 @@ p {
   align-items: center;
   align-content: center;
   padding: 30px 0;
-  
 }
 
 .bar-wrapper .logo-wrapper {
   text-align: center;
-  margin-top: .2em;
+  margin-top: 0.2em;
 }
 
 .bar-wrapper .logo-wrapper img {
@@ -152,7 +152,7 @@ p {
   background-color: var(--blanco);
   padding: 2em;
   border-radius: 10px;
-  transition: opacity .3s linear;
+  transition: opacity 0.3s linear;
 }
 
 .bar-wrapper .nav.active {
@@ -212,11 +212,11 @@ p {
   overflow: hidden;
   position: relative;
   padding-bottom: 5em;
-  animation: fadeInUp .5s ease-in-out;
+  animation: fadeInUp 0.5s ease-in-out;
 }
 
 .slide::after {
-  content: '';
+  content: "";
   position: absolute;
   background-image: url(../images/bg-tablet-pattern.svg);
   top: 13%;
@@ -258,8 +258,7 @@ p {
 .recomendaciones {
   text-align: center;
   padding: 50px 0;
-  animation: fadeInUp .5s ease-in-out;
-
+  animation: fadeInUp 0.5s ease-in-out;
 }
 
 .personajes {
@@ -270,6 +269,12 @@ p {
   margin: 109px 0 57px 0;
   padding: 0 21px;
 }
+.circulo-naranja {
+  display: flex;
+  justify-content: space-around;
+  max-width: 70px;
+  margin: 0 175px 30px 175px;
+}
 
 .personajes img {
   max-width: 70px;
@@ -277,7 +282,7 @@ p {
 }
 
 .testimonios .personajes {
-  display: none
+  display: none;
 }
 
 .testimonios div:first-child {
@@ -293,7 +298,8 @@ p {
 }
 .redes {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  margin: 40px 20px;
 }
 
 .redes img {
@@ -301,7 +307,7 @@ p {
 }
 
 .whats-diff {
-  animation: fadeInUp .5s ease-in-out;
+  animation: fadeInUp 0.5s ease-in-out;
 }
 
 .whats-diff .main-text {
@@ -340,14 +346,14 @@ p {
   color: var(--azul-muy-oscuro);
   font-weight: 700;
   background-color: #ffefeb;
-  padding: .3em 0 .3em 0;
+  padding: 0.3em 0 0.3em 0;
 }
 
 .whats-diff .numbers .number h3 span {
   flex-basis: 10%;
   color: var(--blanco);
   background-color: var(--rojo-brillante);
-  padding: .3em 1em;
+  padding: 0.3em 1em;
   border-radius: 15px;
   margin-right: 1em;
 }
@@ -367,7 +373,7 @@ p {
   background-repeat: no-repeat;
   padding: 5em 3em;
   background-position: left center;
-  animation: fadeInUp .4s ease-in-out;
+  animation: fadeInUp 0.4s ease-in-out;
 }
 
 .simplify .wrapper .simplify-text h1 {
@@ -454,7 +460,7 @@ p {
 
 .site-footer .wrapper .navs .nav-footer ul a li {
   list-style: none;
-  padding-bottom: .5em;
+  padding-bottom: 0.5em;
 }
 
 .site-footer .wrapper .navs .nav-footer ul a:hover {
@@ -483,7 +489,15 @@ p {
   text-decoration: none;
 }
 
-.site-footer .wrapper .social-wrapper .social-icons-wrapper ul li a .footer-social-image img {
+.site-footer
+  .wrapper
+  .social-wrapper
+  .social-icons-wrapper
+  ul
+  li
+  a
+  .footer-social-image
+  img {
   width: 20px;
 }
 
@@ -507,282 +521,282 @@ p {
 
 @media screen and (min-width: 770px) {
   .wrapper {
-      max-width: 1110px;
+    max-width: 1110px;
   }
 
   .btn {
-      padding: 1em 2.5em;
+    padding: 1em 2.5em;
   }
 
   .hero {
-      padding-top: 2.5em;
+    padding-top: 2.5em;
   }
 
   .hero::after {
-      width: 0;
+    width: 0;
   }
 
   .bar-wrapper {
-  animation: fadeInUp .2s ease-in-out;
+    animation: fadeInUp 0.2s ease-in-out;
   }
 
   .bar-wrapper .logo-wrapper {
-      display: block;
-      flex-basis: 20%;
-      padding: 0;
-      margin-top: 1em;
+    display: block;
+    flex-basis: 20%;
+    padding: 0;
+    margin-top: 1em;
   }
 
   .bar-wrapper .logo-wrapper img {
-      width: 80%;
+    width: 80%;
   }
 
   .bar-wrapper .nav {
-      display: block;
-      transform: translateX(0);
-      opacity: 1;
-      position: relative;
-      top: 0;
-      left: 0;
-      right: 0;
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      text-align: left;
-      background-color: transparent;
-      padding: 0em;
-      border-radius: none;
-      transition: none;
-      flex-basis: calc(60% - 80px);
-      text-align: left;
-      max-width: 100%;
-      text-align: center;
+    display: block;
+    transform: translateX(0);
+    opacity: 1;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    background-color: transparent;
+    padding: 0em;
+    border-radius: none;
+    transition: none;
+    flex-basis: calc(60% - 80px);
+    text-align: left;
+    max-width: 100%;
+    text-align: center;
   }
 
   .bar-wrapper .nav ul {
-      width: 100%;
-      display: flex;
-      justify-content: space-around;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
   }
 
   .bar-wrapper .nav ul a {
-      text-decoration: none;
-      font-size: 16px;
-      width: 100%;
-      color: var(--azul-oscuro);
-      width: 100%;
-      margin: 0;
+    text-decoration: none;
+    font-size: 16px;
+    width: 100%;
+    color: var(--azul-oscuro);
+    width: 100%;
+    margin: 0;
   }
 
   .bar-wrapper .nav ul a:hover {
-      color: var(--rojo-brillante);
+    color: var(--rojo-brillante);
   }
 
   .bar-wrapper .hamburguer {
-      display: none;
+    display: none;
   }
 
   .hero-image {
-      display: none;
+    display: none;
   }
 
   .get-started-hero {
-      display: inline-block;
-      flex-basis: 20%;
-      text-align: right;
+    display: inline-block;
+    flex-basis: 20%;
+    text-align: right;
   }
 
   .get-started-hero button {
-      color: var(--blanco);
-      box-shadow: 0 11px 15px -7px rgba(242, 95, 58, 0.57);
+    color: var(--blanco);
+    box-shadow: 0 11px 15px -7px rgba(242, 95, 58, 0.57);
   }
 
   .tableta {
-      display: block;
-      position: absolute;
-      top: -23%;
-      right: -23%;
-      z-index: -1000;
+    display: block;
+    position: absolute;
+    top: -23%;
+    right: -23%;
+    z-index: -1000;
   }
 
   .slide::after {
-      display: none;
+    display: none;
   }
 
   .slide .wrapper {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-areas: "text image";
-      padding: 3em 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "text image";
+    padding: 3em 0;
   }
 
   .slide .wrapper .slide-image {
-      display: inline-block;
-      grid-area: image;
+    display: inline-block;
+    grid-area: image;
   }
 
   .slide .wrapper .slide-text {
-      grid-area: text;
+    grid-area: text;
   }
 
   .slide .wrapper .slide-text h1 {
-      text-align: left;
-      font-size: 50px;
+    text-align: left;
+    font-size: 50px;
   }
 
   .slide .wrapper .slide-text p {
-      text-align: left;
-      padding: 0;
-      margin: 2em 0;
-      max-width: 70%;
+    text-align: left;
+    padding: 0;
+    margin: 2em 0;
+    max-width: 70%;
   }
 
   .slide {
-      padding: 0;
+    padding: 0;
   }
 
   .whats-diff {
-      max-width: 1110px;
-      margin: 0 auto;
-      display: flex;
-      animation: fadeInUp .8s ease-in-out;
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    animation: fadeInUp 0.8s ease-in-out;
   }
 
   .whats-diff .main-text {
-      flex-basis: calc(50% - 10px);
+    flex-basis: calc(50% - 10px);
   }
 
   .whats-diff .main-text h2 {
-      max-width: 80%;
-      font-size: 35px;
-      text-align: left;
+    max-width: 80%;
+    font-size: 35px;
+    text-align: left;
   }
 
   .whats-diff .main-text p {
-      text-align: left;
-      max-width: 60%;
+    text-align: left;
+    max-width: 60%;
   }
 
   .whats-diff .numbers {
-      flex-basis: 50%;
+    flex-basis: 50%;
   }
 
   .whats-diff .numbers .number {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .whats-diff .numbers .number h3 {
-      background-color: transparent;
-      margin: 0 0 .5em 0;
+    background-color: transparent;
+    margin: 0 0 0.5em 0;
   }
 
   .whats-diff .numbers .number p {
-      max-width: 85%;
-      transform: translateX(18%);
+    max-width: 85%;
+    transform: translateX(18%);
   }
 
   .tableta-diff {
-      display: inline-block;
-      position: absolute;
-      z-index: -1000;
-      bottom: -923px;
-      left: -573px;
+    display: inline-block;
+    position: absolute;
+    z-index: -1000;
+    bottom: -923px;
+    left: -573px;
   }
 
   .simplify {
-      background-image: url(../images/bg-simplify-section-desktop.svg);
-      background-position: center bottom;
+    background-image: url(../images/bg-simplify-section-desktop.svg);
+    background-position: center bottom;
   }
 
   .simplify .wrapper {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .simplify .wrapper .simplify-text h1 {
-      text-align: left;
-      max-width: 80%;
+    text-align: left;
+    max-width: 80%;
   }
 
   .site-footer .wrapper .errorContainer {
-      display: none;
-      position: absolute;
-      right: 13%;
-      bottom: 60%;
+    display: none;
+    position: absolute;
+    right: 13%;
+    bottom: 60%;
   }
 
   .site-footer .wrapper {
-      display: grid;
-      grid-template-areas: "social navs navs form""copy copy copy copy";
+    display: grid;
+    grid-template-areas: "social navs navs form" "copy copy copy copy";
   }
 
   .site-footer .wrapper .form-wrapper {
-      grid-area: form;
+    grid-area: form;
   }
 
   .site-footer .wrapper .form-wrapper form {
-      width: 100%;
+    width: 100%;
   }
 
   .site-footer .wrapper .form-wrapper input[type="submit"] {
-      height: 44px;
-      padding: 0;
-      cursor: pointer;
+    height: 44px;
+    padding: 0;
+    cursor: pointer;
   }
 
   .site-footer .wrapper .navs {
-      grid-area: navs;
-      margin: 0;
+    grid-area: navs;
+    margin: 0;
   }
 
   .site-footer .wrapper .social-wrapper {
-      display: flex;
-      grid-area: social;
-      flex-direction: column-reverse;
-      justify-content: space-between;
-      margin: 0;
+    display: flex;
+    grid-area: social;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    margin: 0;
   }
 
   .site-footer .wrapper .social-wrapper .social-icons-wrapper {
-      margin: 0 auto;
-      max-width: 200px;
+    margin: 0 auto;
+    max-width: 200px;
   }
 
   .site-footer .wrapper .social-wrapper .logo-wrapper-footer {
-      margin: 0;
+    margin: 0;
   }
 
   .site-footer .wrapper .copy {
-      margin-top: 4em;
-      grid-area: copy;
+    margin-top: 4em;
+    grid-area: copy;
   }
-
 
   .recomendaciones {
-      text-align: center;
-      padding: 100px 71px 180px 71px;
-      animation: fadeIn 5s ease-in-out;
+    text-align: center;
+    padding: 100px 71px 180px 71px;
+    animation: fadeIn 5s ease-in-out;
   }
 
-
-
   .personajes {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: var(--gris-claro);
-      margin: 109px 0 57px 0;
-      padding: 0 21px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--gris-claro);
+    margin: 109px 0 57px 0;
+    padding: 0 21px;
+  }
+  .circulo-naranja {
+    display: none;
   }
 
   .personajes img {
-      max-width: 70px;
-      margin: -30px 0 21px 0;
+    max-width: 70px;
+    margin: -30px 0 21px 0;
   }
 
   .testimonios {
-      display: flex;
+    display: flex;
   }
 
   .testimonios .personajes {
@@ -790,12 +804,15 @@ p {
   }
 
   .avatar {
-      display: flex;
-      max-width: 445px;
-      max-height: 219px;
-      background: #fafafa;
-      text-align: center;
+    display: flex;
+    max-width: 445px;
+    max-height: 219px;
+    background: #fafafa;
+    text-align: center;
   }
-
-
+  .redes {
+    display: flex;
+    justify-content: center;
+    margin: 40px 20px;
+  }
 }
